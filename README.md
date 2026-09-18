@@ -17,7 +17,7 @@ The dataset is imbalanced: only 3.39% of records represent an actual machine fai
 ## Approach
 
 1. **Data cleaning** — dropped non-predictive identifier columns (`UDI`, `Product ID`).
-2. **Leakage prevention** — excluded the five failure-mode sub-flags (`TWF`, `HDF`, `PWF`, `OSF`, `RNF`) from the feature set. These columns are only populated *after* a failure occurs, so including them would let the model "cheat" by seeing the answer.
+2. **Leakage prevention** — excluded the five failure-mode sub-flags (`TWF`, `HDF`, `PWF`, `OSF`, `RNF`) from the feature set. These columns are only populated after a failure occurs, so including them would let the model "cheat" by seeing the answer.
 3. **Feature encoding** — one-hot encoded the categorical `Type` column.
 4. **Train/test split** — stratified 80/20 split to preserve the class ratio in both sets.
 5. **Scaling** — standardized features for the linear baseline model.
