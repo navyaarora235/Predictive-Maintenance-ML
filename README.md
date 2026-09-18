@@ -1,5 +1,4 @@
 # Predictive-Maintenance-ML
-# Predictive Maintenance ML
 
 A binary classification project that predicts industrial machine failures using sensor telemetry data, built to explore how machine learning can support proactive maintenance scheduling.
 
